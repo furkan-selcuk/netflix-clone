@@ -1,46 +1,169 @@
-# Getting Started with Create React App
+# 🎬 Netflix Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern React TypeScript ile Netflix benzeri streaming platformu, giriş sayfası, film kategorileri ve responsive tasarım ile tam özellikli web uygulaması.
 
-## Available Scripts
+![Netflix Clone](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-In the project directory, you can run:
+## 🚀 Özellikler
 
-### `npm start`
+- **🎭 Netflix Benzeri Giriş Sayfası** - Oturum açmadan önceki landing page
+- **📺 Film/Dizi Kategorileri** - Aksiyon, Komedi, Drama filmleri
+- **🎨 Modern UI/UX** - Netflix'in kırmızı teması ve koyu arka plan
+- **📱 Responsive Tasarım** - Mobil ve masaüstü uyumlu
+- **⚡ İnteraktif Kartlar** - Hover efektleri ile film kartları
+- **🔍 Film Detay Sayfaları** - Detaylı film bilgileri
+- **🎯 Kategori Bazlı Gözatma** - Farklı film türleri
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠 Teknolojiler
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React 18** - Modern React hooks ve functional components
+- **TypeScript** - Tip güvenliği ve geliştirici deneyimi
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router DOM** - Sayfa yönlendirme
+- **Lucide React** - Modern ikonlar
+- **Framer Motion** - Smooth animasyonlar
 
-### `npm test`
+## 📦 Kurulum
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Gereksinimler
+- Node.js (v16 veya üzeri)
+- npm veya yarn
 
-### `npm run build`
+### Adımlar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Repository'yi klonlayın:**
+```bash
+git clone https://github.com/furkan-selcuk/netflix-clone.git
+cd netflix-clone
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Bağımlılıkları yükleyin:**
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Projeyi başlatın:**
+```bash
+npm start
+```
 
-### `npm run eject`
+4. **Tarayıcıda açın:**
+```
+http://localhost:3000
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🎯 Kullanım
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Giriş Sayfası
+- E-posta ve şifre ile giriş yapın
+- "Beni hatırla" seçeneği
+- Kayıt ol / Giriş yap geçişi
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Ana Sayfa
+- Netflix benzeri hero bölümü
+- Film/dizi satırları
+- Hover efektleri ile interaktif kartlar
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Gözatma Sayfası
+- Kategorilere ayrılmış filmler
+- Kaydırılabilir satırlar
+- Film detaylarına erişim
 
-## Learn More
+### Film Detay Sayfası
+- Detaylı film bilgileri
+- Oyuncu ve yönetmen bilgileri
+- Oynat, beğen, paylaş butonları
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Proje Yapısı
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+netflix-clone/
+├── src/
+│   ├── components/          # Yeniden kullanılabilir bileşenler
+│   │   ├── Navbar.tsx      # Navigasyon çubuğu
+│   │   ├── Hero.tsx        # Ana sayfa hero bölümü
+│   │   ├── MovieCard.tsx   # Film kartı bileşeni
+│   │   └── MovieRow.tsx    # Film satırı bileşeni
+│   ├── pages/              # Sayfa bileşenleri
+│   │   ├── Login.tsx       # Giriş sayfası
+│   │   ├── Home.tsx        # Ana sayfa
+│   │   ├── Browse.tsx      # Gözatma sayfası
+│   │   └── MovieDetail.tsx # Film detay sayfası
+│   ├── App.tsx             # Ana uygulama bileşeni
+│   ├── index.tsx           # Uygulama giriş noktası
+│   └── index.css           # Global stiller
+├── public/                 # Statik dosyalar
+├── tailwind.config.js      # Tailwind yapılandırması
+└── package.json            # Proje bağımlılıkları
+```
+
+## 🎨 Tasarım Özellikleri
+
+- **Netflix Kırmızısı**: #E50914
+- **Koyu Tema**: #141414 arka plan
+- **Responsive Grid**: Mobil-first yaklaşım
+- **Smooth Animasyonlar**: Hover efektleri
+- **Modern Typography**: Inter font ailesi
+
+## 🔧 Geliştirme
+
+### Yeni Özellik Ekleme
+1. Yeni bileşen oluşturun (`src/components/`)
+2. Sayfa ekleyin (`src/pages/`)
+3. Route'u ekleyin (`src/App.tsx`)
+4. Stil ekleyin (Tailwind CSS)
+
+### Stil Değişiklikleri
+- Tailwind CSS sınıfları kullanın
+- `tailwind.config.js`'de özel renkler tanımlayın
+- `src/index.css`'de global stiller ekleyin
+
+## 🚀 Gelecek Özellikler
+
+- [ ] Backend entegrasyonu
+- [ ] Kullanıcı kimlik doğrulama
+- [ ] Video player
+- [ ] Arama fonksiyonu
+- [ ] Favori listesi
+- [ ] Daha fazla animasyon
+
+## 📸 Ekran Görüntüleri
+
+### Giriş Sayfası
+![Login Page](https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Netflix+Login+Page)
+
+### Ana Sayfa
+![Home Page](https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Netflix+Home+Page)
+
+### Film Detay
+![Movie Detail](https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Movie+Detail+Page)
+
+## 🤝 Katkıda Bulunma
+
+1. Fork yapın
+2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
+4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
+5. Pull Request oluşturun
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
+
+## 👨‍💻 Geliştirici
+
+**Furkan Selçuk**
+- GitHub: [@furkan-selcuk](https://github.com/furkan-selcuk)
+
+## 🙏 Teşekkürler
+
+- [Netflix](https://netflix.com) - Tasarım ilhamı
+- [React](https://reactjs.org) - Frontend framework
+- [Tailwind CSS](https://tailwindcss.com) - CSS framework
+- [Unsplash](https://unsplash.com) - Görseller
+
+---
+
+⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
