@@ -67,6 +67,14 @@ const mockMovies = [
     rating: 'TV-MA',
     year: '2017',
     duration: '4 Sezon'
+  },
+  {
+    id: '8',
+    title: 'Ozark',
+    image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+    rating: 'TV-MA',
+    year: '2017',
+    duration: '4 Sezon'
   }
 ];
 
